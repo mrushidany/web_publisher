@@ -17,15 +17,53 @@
                     backgroundImage: {
                         'hero': "url('/images/bg/hero-bg.webp')"
                     }
+                },
+                colors: {
+                    transparent: 'transparent',
+                    'white': {
+                        default: '#FFFFFF'
+                    }
                 }
             }
         }
     </script>
 </head>
 <body class='font-spoqa w-screen min-h-screen hidden lg:block'>
-    <main class='w-full h-auto'>
+    <main class='w-full h-auto text-white-default'>
         <section class='w-full h-screen px-48 bg-hero bg-cover bg-no-repeat bg-center'>
-
+            <nav class='w-full h-20 py-[26px] block'>
+                <ul class='w-full h-full flex flex-row justify-between items-center font-bold text-[20px] leading-8 tracking-[-1%] text-center'>
+                    <li class='flex flex-row items-center gap-28'>
+                        <div>
+                            <a href='/'>
+                                <img src='/images/logo.svg' class='w-[300px] h-[26px]' alt='Logo' />
+                            </a>
+                        </div>
+                        <ul class='flex flex-row gap-16'>
+                            <li>
+                                <a href='#'>센터원</a>
+                            </li>
+                            <li>
+                                <a href='#'>이용안내</a>
+                            </li>
+                            <li>
+                                <a href='#'>서비스소개</a>
+                            </li>
+                            <li>
+                                <a href='#'>임대문의</a>
+                            </li>
+                            <li>
+                                <a href='#'>고객지원</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href='/'>
+                            <img src='/images/globe.svg' alt='Globe' />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </section>
     </main>
 </body>
