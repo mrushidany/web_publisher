@@ -26,7 +26,8 @@ tailwind.config = {
             'gray': {
                 default: '#7D7D7D',
                 100: '#575757',
-                200: '#BBBBBB'
+                200: '#BBBBBB',
+                300: '#979797'
             },
             'blue': {
                 default: '#00427A'
