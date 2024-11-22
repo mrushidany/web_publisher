@@ -8,6 +8,7 @@ tailwind.config = {
                 'hero': "url('/images/bg/hero-bg.webp')",
                 'event': "url('/images/bg/event.webp')",
                 'christmas': "url('/images/bg/christmas.webp')",
+                'miracle-asset': "url('/images/bg/miracle-asset.webp')"
             }
         },
         colors: {
