@@ -1,4 +1,4 @@
-This is a [Mirae Asset - Web Publisher Quest](https://nextjs.org) project bootstrapped with [`Nextjs and Tailwindcss`]
+This is a [Mirae Asset - Web Publisher Quest](https://web-publisher.vercel.app/) project bootstrapped with [`Nextjs and Tailwindcss`]
 
 ## Getting Started
 
