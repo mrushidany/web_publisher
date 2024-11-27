@@ -7,7 +7,7 @@ import wellness from '../../public/images/wellness.webp'
 import sparkplus from '../../public/images/sparkplus.webp'
 
 export default function Convenience() {
-  const [activeCard, setActiveCard] = useState(null)
+  const [activeCard, setActiveCard] = useState('kf')
 
   const cards = [
     {
