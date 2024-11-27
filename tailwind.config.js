@@ -10,6 +10,13 @@ module.exports = {
       fontFamily: {
         'spoqa': ['Spoqa Han Sans', 'sans-serif']
       },
+      backgroundImage: {
+        'hero': "url('/images/bg/hero-bg.webp')",
+        'hero-sm': "url('/images/bg/hero-sm.webp')",
+        'event': "url('/images/bg/event.webp')",
+        'christmas': "url('/images/bg/christmas.webp')",
+        'miracle-asset': "url('/images/bg/miracle-asset.webp')"
+      },
       colors: {
         transparent: 'transparent',
         'white': {
