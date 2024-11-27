@@ -42,13 +42,13 @@ export default function About() {
         setActiveSection(sectionId)
     }
   return (
-    <section className='w-full h-screen px-48 bg-cover bg-center bg-no-repeat pt-20 pb-6 lg:pt-40 lg:pb-20 relative transition-all ease-linear duration-300' style={{ backgroundImage: `url(${services.find((s) => s.id === activeSection).background})` }}>
+    <section className='w-full h-auto lg:h-screen px-4 lg:px-48 bg-cover bg-center bg-no-repeat pt-20 pb-6 lg:pt-40 lg:pb-20 relative transition-all ease-linear duration-300' style={{ backgroundImage: `url(${services.find((s) => s.id === activeSection).background})` }}>
         <div className='w-full flex flex-col items-start gap-7'>
             <div>
                 <Image className='w-full hidden lg:block' src={services.find((s) => s.id === activeSection).title} alt={services.find((s) => s.id === activeSection).id} />
                 <Image src={about} className='w-full block lg:hidden' alt={services.find((s) => s.id === activeSection).id}/>
             </div>
-            <div className='w-full hidden lg:flex flex-col gap-4'>
+            <div className='w-full flex flex-col gap-4'>
                 <div className='w-full lg:w-3/4 h-0 relative border-[1px] border-gray-400'>
                     <div className='absolute w-1/2 lg:w-1/3 h-0 -top-[2px] left-0 border-[1.5px] border-white-default'></div>
                 </div>
@@ -58,16 +58,16 @@ export default function About() {
                         <span>{`view more >`}</span>
                     </button>
                 </div>
+                <div className='w-full flex mt-28 justify-center lg:hidden'>
+                    <div className='flex flex-row gap-2'>
+                        {services.map((s) => (
+                            <button key={s.id} className={`w-8 h-[3px] rounded-md ${activeSection === s.id ? 'bg-white-default' : 'bg-white-200'}`} onClick={() => handleSectionChange(s.id)}></button>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
         <div className='hidden absolute bottom-20 w-full lg:flex items-center justify-center'>
-            <div className='flex flex-row gap-2'>
-                {services.map((s) => (
-                    <button key={s.id} className={`w-8 h-[3px] rounded-md ${activeSection === s.id ? 'bg-white-default' : 'bg-white-200'}`} onClick={() => handleSectionChange(s.id)}></button>
-                ))}
-            </div>
-        </div>
-        <div className='h-full w-full flex items-end justify-center lg:hidden'>
             <div className='flex flex-row gap-2'>
                 {services.map((s) => (
                     <button key={s.id} className={`w-8 h-[3px] rounded-md ${activeSection === s.id ? 'bg-white-default' : 'bg-white-200'}`} onClick={() => handleSectionChange(s.id)}></button>

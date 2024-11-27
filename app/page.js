@@ -3,6 +3,7 @@
 import About from './components/About'
 import Convenience from './components/Convenience'
 import Hero from './components/Hero'
+import Center from './components/Center'
 
 export default function Home() {
   return (
@@ -10,45 +11,8 @@ export default function Home() {
       <Hero />
       <Convenience />
       <About />
-      {/* <section class='w-full h-screen bg-dark-default flex items-center px-48 hidden lg:block'>
-            <div class='flex flex-col gap-[120px]'>
-                <div class='flex flex-col tracking-[-1%] text-[40px] leading-[64px]'>
-                    <h3 class='tracking-[-1.4%] uppercase flex flex-row gap-2 items-baseline'><span>ONLY</span><img src='./images/center_logo.png' class='w-[196px] h-[39px] object-cover' alt='CENTER 1' /></h3>
-                    <p>미래에셋센터원에서만 누리는 <span class='text-orange-default'>특별한 혜택</span></p>
-                </div>
-                <div class='w-full grid grid-cols-3 gap-10 text-[32px] leading-[48px] tracking-[-1%]'>
-                    <div class='w-full h-auto flex flex-col gap-10'>
-                        <div class='w-full h-auto'>
-                            <img src='./images/mom-child.webp' class='w-full' alt='Mom and Child' />
-                        </div>
-                        <div class='flex flex-col gap-2'>
-                            <h3>프라임 서비스</h3>
-                            <p class='w-full font-normal leading-7 text-[18px]'>임산부 휴게실/수유실 운영, 세차 서비스, 우편 배달 서비스 등 입주사 임직원을 위한 차별화된 서비스를 제공합니다.</p>
-                        </div>
-                    </div>
-                    <div class='w-full h-auto flex flex-col gap-10'>
-                        <div class='w-full h-auto'>
-                            <img src='./images/petrol-station.webp' class='w-full' alt='Petrol Station' />
-                        </div>
-                        <div class='flex flex-col gap-2'>
-                            <h3>E-pit 전기차 충전소</h3>
-                            <p class='w-full font-normal leading-7 text-[18px] text-gray-200'>미래에셋센터원 주차장에는 전기차 이용자들을 위해
-                                일반 충전소 외에도 E-pit 전기차 충전소가 마련되어 있습니다.</p>
-                        </div>
-                    </div>
-                    <div class='w-full h-auto flex flex-col gap-10'>
-                        <div class='w-full h-auto'>
-                            <img src='./images/parking.webp' class='w-full' alt='Parking' />
-                        </div>
-                        <div class='flex flex-col gap-2'>
-                            <h3>주차요금 할인</h3>
-                            <p class='w-full font-normal leading-7 text-[18px] text-gray-200'>오피스,에비뉴 방문시 주차할인 혜택을 드리며 주말에는 
-                                최대 8천원으로 부담없이 미래에셋센터원을 즐길 수 있습니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <Center />
+      {/* 
         <section class='w-screen h-screen bg-white-100 flex items-center px-48 relative hidden lg:block'>
             <div class='w-full grid grid-cols-2 gap-10'>
                 <div class='w-full h-auto flex flex-col gap-12 relative'>
