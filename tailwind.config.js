@@ -21,7 +21,8 @@ module.exports = {
         transparent: 'transparent',
         'white': {
           default: '#FFFFFF',
-          100: '#ECEFF1'
+          100: '#ECEFF1',
+          200: '#FFFFFF66'
         },
         'dark': {
           default: '#242424',
@@ -34,7 +35,8 @@ module.exports = {
           default: '#7D7D7D',
           100: '#575757',
           200: '#BBBBBB',
-          300: '#979797'
+          300: '#979797',
+          400: '#BEBEBE'
         },
         'blue': {
           default: '#00427A'
