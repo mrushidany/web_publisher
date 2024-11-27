@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import headTitle from '../../public/images/head-title.svg'
 import Navbar from './Navbar'

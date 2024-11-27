@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import logo from '../../public/images/logo.svg'
 import smLogo from '../../public/images/sm-logo.svg'
