@@ -42,7 +42,7 @@ export default function About() {
         setActiveSection(sectionId)
     }
   return (
-    <section className='w-full h-auto lg:h-screen px-4 lg:px-48 bg-cover bg-center bg-no-repeat pt-20 pb-6 lg:pt-40 lg:pb-20 relative transition-all ease-linear duration-300' style={{ backgroundImage: `url(${services.find((s) => s.id === activeSection).background})` }}>
+    <section className='w-full h-auto lg:h-screen px-4 lg:px-48 bg-fixed bg-cover bg-center bg-no-repeat pt-20 pb-6 lg:pt-40 lg:pb-20 relative transition-all ease-linear duration-300' style={{ backgroundImage: `url(${services.find((s) => s.id === activeSection).background})` }}>
         <div className='w-full flex flex-col items-start gap-7'>
             <div>
                 <Image className='w-full hidden lg:block' src={services.find((s) => s.id === activeSection).title} alt={services.find((s) => s.id === activeSection).id} />
